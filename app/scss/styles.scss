@@ -1,0 +1,57 @@
+@import "variables";
+@import "mixins";
+@import "header";
+@import "content";
+@import "footer";
+
+body {
+  background: url("../img/img01.png");
+  font-family: Oswald;
+  font-size: 0.9em;
+  color: #887644;
+}
+
+.mainHeader, .mainContent, .mainFooter {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block {
+  padding-top: 2em;
+  padding-bottom: 3em;
+  margin-bottom: 2em;
+  border-bottom: 2px groove #f7e9b7;
+}
+
+ul {
+  list-style: none;
+}
+
+
+.flexContaintenerFour, .flexContaintenerThree, .flexContaintenerTwo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.columnOneFourth, .columnOneThird, .columnOneSecond {
+  box-sizing: border-box;
+}
+
+.columnOneFourth {
+  flex: 0 1 22%;
+  position: relative;
+}
+
+.columnOneThird {
+  flex: 0 1 31%;
+}
+
+.columnOneSecond {
+  flex: 0 1 48%;
+}
+
+
+
+
