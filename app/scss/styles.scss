@@ -12,15 +12,15 @@ body {
 }
 
 .mainHeader, .mainContent, .mainFooter {
-  max-width: 1400px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .block {
-  padding-top: 2em;
-  padding-bottom: 3em;
-  margin-bottom: 2em;
+  padding-top: $margin_padding_biggest;
+  padding-bottom: $margin_padding_large;
+  margin-bottom: $margin_padding_normal;
   border-bottom: 2px groove #f7e9b7;
 }
 
@@ -51,6 +51,21 @@ ul {
 .columnOneSecond {
   flex: 0 1 48%;
 }
+
+.mainNav, .controlContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
 
 
 

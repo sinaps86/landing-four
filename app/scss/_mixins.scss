@@ -1,0 +1,33 @@
+%button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: $color_font_bright;
+}
+
+
+@mixin round_button{
+
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: $color_font_white;
+
+  background-color: $color_primal;
+  padding: $margin_padding_smallest $margin_padding_normal;
+  border-radius: 5px;
+  font-size: $size_font_big;
+}
+
+@mixin square_button{
+
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: $color_font_black;
+
+  padding: $margin_padding_small $margin_padding_big;
+  font-size: $size_font_big;
+  letter-spacing: 1px;
+}
+

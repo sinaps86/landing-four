@@ -1,0 +1,21 @@
+.mainContent {
+
+  .pic {
+    &>img {
+      width: 100%;
+    }
+  }
+
+  .controlContainer {
+    background-color: $color_dark;
+    padding: $margin_padding_small $margin_padding_normal;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    img {
+      width: 1.4em;
+    }
+  }
+}

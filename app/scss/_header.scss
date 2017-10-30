@@ -1,0 +1,40 @@
+.mainNav {
+  padding-bottom: $margin_padding_big;
+
+  li {
+    display: inline-block;
+    padding-right: $margin_padding_normal;
+  }
+
+  .name {
+    font-size: $size_title_large;
+    font-weight: 200;
+    padding-right: $margin_padding_smallest;
+    color: $color_font_black;
+  }
+
+  .ref {
+    font-style: $size_font_big;
+    color: $color_soft;
+    vertical-align: baseline;
+    font-style: italic;
+  }
+
+  .button {
+    @include square_button;
+  }
+  
+  .active, a:hover {
+    background-color: $color_font_black;
+    color: $color_font_white;
+  }
+}
+
+.mainLogo {
+  background-color: $color_bright;
+  padding: $margin_padding_big;
+
+  img {
+    width: 100%;
+  }
+}

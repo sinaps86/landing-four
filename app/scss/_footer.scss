@@ -1,0 +1,13 @@
+.mainFooter {
+  text-align: center;
+  padding-top: $margin_padding_big;
+  padding-bottom: $margin_padding_biggest;
+  background-color: $color_pimal_darker;
+  word-spacing: 2px;
+  color: $color_primal_lighter;
+
+  a {
+    color: $color_primal_lighter;
+    text-decoration: none;
+  }
+}
