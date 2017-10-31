@@ -5,6 +5,20 @@
 
 }
 
+@mixin midddle{
+  @media (max-width: $screen-medium) {
+    @content;
+  }
+}
+
+
+@mixin small{
+  @media (max-width: $screen-small) {
+    @content;
+  }
+}
+
+
 @mixin round_button{
   @extend %button;
   color: $color_font_white;
@@ -21,6 +35,11 @@
   padding: $margin_padding_small $margin_padding_big;
   font-size: $size_font_big;
   letter-spacing: 1px;
+
+  @include small {
+    font-size: $size_font_normal;
+    padding: $margin_padding_small;
+  }
 }
 
 
@@ -28,15 +47,3 @@
   border-bottom: 2px groove $color_second_light;
 }
 
-@mixin midddle{
-  @media (max-width: $screen-medium) {
-    @content;
-  }
-}
-
-
-@mixin small{
-  @media (max-width: $screen-small) {
-    @content;
-  }
-}

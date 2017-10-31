@@ -4,7 +4,9 @@
 
 .mainNav {
   padding-bottom: $margin_padding_big;
-
+  @include midddle {
+    padding-bottom: 0;
+  }
 
 
   li {
@@ -12,7 +14,9 @@
     padding-right: $margin_padding_normal;
     @include midddle {
       padding-right: 0;
+      margin-right: 0;
     }
+
   }
 
   ul {

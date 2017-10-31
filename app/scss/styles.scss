@@ -111,7 +111,8 @@ ul {
 }
 
 .navMenu {
-  flex: 0 0 70%;
+  flex: 0 0 auto;
+  margin-left: auto;
 }
 
 .card {
@@ -145,6 +146,19 @@ ul {
   }
 }
 
+.veticalFlex {
+  display: flex;
+  flex-flow: column nowrap;
+
+  @include midddle {
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  @include small {
+    flex-flow: column nowrap;
+  }
+}
 
 
 .list {
@@ -154,6 +168,9 @@ ul {
     padding-left: 0;
     padding-right: 2em;
     @include midddle {
+      padding-left: 1em;
+    }
+    @include small {
       padding-left: 2em;
     }
   }
