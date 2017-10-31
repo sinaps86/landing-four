@@ -111,6 +111,11 @@
       align-self: flex-start;
       box-sizing: border-box;
       flex: 0 0 57%;
+
+      @include small{
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
 
     .button {

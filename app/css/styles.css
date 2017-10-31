@@ -130,6 +130,10 @@
   align-self: flex-start;
   box-sizing: border-box;
   flex: 0 0 57%; }
+  @media (max-width: 560px) {
+    .third .card .description {
+      margin-left: auto;
+      margin-right: auto; } }
 
 .third .card .button {
   color: #FFFFFF;
