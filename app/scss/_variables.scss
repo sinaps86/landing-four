@@ -4,6 +4,8 @@ $color_primal: #887644;
 $color_primal_dark: #706443;
 $color_pimal_darker: #62573B;
 
+$color_second_light: #F7E9B7;
+
 $color_dark: #1F1F1F;
 $color_soft: #545454;
 $color_bright: #FFFFFF;
@@ -16,19 +18,25 @@ $color_font_white: $color_bright;
 $color_font_black: $color_dark;
 
 
-$size_font_small: 0.8em;
-$size_font_normal: 0.9em;
-$size_font_big: 1.1em;
+$size_font_small: 0.9em;
+$size_font_normal: 1em;
+$size_font_big: 1.3em;
 
 $size_title_small: 1.3em;
 $size_title_normal: 1.5em;
-$size_title_big: 2em;
-$size_title_large: 2.8em;
+$size_title_big: 1.8em;
+$size_title_large: 2.6em;
 
 
 $margin_padding_smallest: 0.4em;
-$margin_padding_small: 0.7em;
+$margin_padding_small: 0.6em;
 $margin_padding_normal: 1em;
 $margin_padding_big: 1.4em;
 $margin_padding_biggest: 2em;
 $margin_padding_large: 3em;
+
+$border_style_one: 2px groove $color_second_light;
+
+$screen-small: 480px;
+$screen-medium: 960px;
+$screen-large: 1300px;

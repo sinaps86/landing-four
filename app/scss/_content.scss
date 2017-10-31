@@ -1,7 +1,7 @@
 .mainContent {
 
   .pic {
-    &>img {
+    & > img {
       width: 100%;
     }
   }
@@ -19,3 +19,136 @@
     }
   }
 }
+
+.first {
+  h2 {
+    font-size: $size_title_big;
+  }
+}
+
+.second {
+  .card:nth-of-type(n + 2) {
+    border-top: $border_style_one;
+  }
+
+  h2 {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  h3 {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  a {
+    text-decoration: underline;
+    color: $color_primal_light;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .button {
+    @include round_button;
+    margin-top: $margin_padding_normal;
+  }
+
+  nav {
+
+  }
+}
+
+.third {
+
+  .card {
+
+    h2 {
+      font-size: $size_title_big;
+      padding-top: 0;
+      margin-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .pic {
+      box-sizing: border-box;
+      flex: 0 0 39%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .description {
+      align-self: flex-start;
+      box-sizing: border-box;
+      flex: 0 0 57%;
+    }
+
+    .button {
+      @include round_button;
+    }
+  }
+}
+
+  .fourth {
+    margin-bottom: $margin_padding_large;
+
+    h2 {
+      font-size: $size_title_big;
+    }
+
+    h3 {
+      font-size: $size_font_normal;
+      font-weight: bold;
+      padding-top: $margin_padding_small;
+      &:nth-of-type(n + 2) {
+        border-top: $border_style_one;
+      }
+    }
+
+    p {
+      padding-bottom: $margin_padding_small;
+    }
+
+    blockquote {
+      font-size: $size_font_big;
+      padding-left: $margin_padding_biggest;
+      margin-left: 0;
+      line-height: 2;
+      font-style: italic;
+      font-weight: 200;
+
+      &:before {
+        content: '" ';
+      }
+
+      &:after {
+        content: ' "';
+      }
+    }
+
+    .author {
+      font-size: $size_title_normal;
+      padding-left: $margin_padding_biggest;
+    }
+
+    .topics {
+
+      a {
+        font-style: italic;
+        text-decoration: none;
+        color: $color_font_soft;
+        font-size: $size_font_small;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
