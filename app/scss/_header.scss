@@ -1,9 +1,25 @@
+.block {
+
+}
+
 .mainNav {
   padding-bottom: $margin_padding_big;
+
+
 
   li {
     display: inline-block;
     padding-right: $margin_padding_normal;
+    @include midddle {
+      padding-right: 0;
+    }
+  }
+
+  ul {
+    @include midddle {
+      margin-left: 0;
+      padding-left: 0;
+    }
   }
 
   .name {
@@ -22,6 +38,7 @@
 
   .button {
     @include square_button;
+
   }
   
   .active, a:hover {
@@ -33,6 +50,11 @@
 .mainLogo {
   background-color: $color_bright;
   padding: $margin_padding_big;
+
+  @include midddle {
+    padding: 0;
+    background-color: transparent;
+  }
 
   img {
     width: 100%;

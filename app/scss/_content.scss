@@ -16,6 +16,7 @@
 
     img {
       width: 1.4em;
+      margin-left: auto;
     }
   }
 }
@@ -24,11 +25,33 @@
   h2 {
     font-size: $size_title_big;
   }
+
+  @include midddle {
+    margin-top: -3.5em;
+
+  }
 }
 
 .second {
   .card:nth-of-type(n + 2) {
     border-top: $border_style_one;
+  }
+
+  .card {
+    .description {
+      @include midddle {
+        font-size: $size_font_big;
+      }
+      @include small {
+        font-size: $size_font_normal;
+      }
+    }
+  }
+
+  .themeOfDay{
+    @include midddle {
+      margin-bottom: 3em;
+    }
   }
 
   h2 {
@@ -116,6 +139,7 @@
       padding-bottom: $margin_padding_small;
     }
 
+
     blockquote {
       font-size: $size_font_big;
       padding-left: $margin_padding_biggest;
@@ -130,6 +154,10 @@
 
       &:after {
         content: ' "';
+      }
+
+      @include midddle {
+        padding-right: $margin_padding_large;
       }
     }
 

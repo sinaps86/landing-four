@@ -10,6 +10,7 @@ body {
   font-size: 0.9em;
   font-weight: 400;
   color: #887644;
+
 }
 
 h2, h3 {
@@ -24,8 +25,10 @@ h3 {
   font-size: $size_title_big;
 }
 
+
 .mainHeader, .mainContent, .mainFooter {
   max-width: 1300px;
+  min-widh: 475px;
   margin-left: auto;
   margin-right: auto;
   @include midddle {
@@ -61,11 +64,12 @@ ul {
   position: relative;
 
   @include midddle {
-    flex: 0 1 48%;
+    flex: 0 1 49%;
+    padding-top: $margin_padding_biggest;
   }
 
   @include small {
-    flex: 0 1 98%;
+    flex: 0 0 98%;
   }
 }
 
@@ -73,6 +77,10 @@ ul {
   box-sizing: border-box;
   flex: 0 1 32%;
   align-items: flex-start;
+
+  @include small {
+    flex: 0 0 98%;
+  }
 }
 
 .columnOneSecond {
@@ -85,11 +93,26 @@ ul {
 
 .mainNav, .controlContainer {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+
+  @include midddle {
+    justify-content: flex-start;
+  }
 }
 
+.logoTitle {
+  flex: 0 0 25%;
+
+  @include midddle {
+    flex: 0 0 50%;
+  }
+}
+
+.navMenu {
+  flex: 0 0 70%;
+}
 
 .card {
   display: flex;
@@ -99,28 +122,40 @@ ul {
   padding-bottom: $margin_padding_big;
   align-items: center;
   line-height: 1.8;
+  @include midddle {
+    flex-flow: column wrap;
+  }
 
   .pic {
     flex: 0 0 30%;
     margin-right: 4%;
     height: 100%;
     width: 100%;
-
+    @include midddle {
+      margin-right: 0;
+    }
   }
 
   .description {
     flex: 0 0 65%;
     padding-right: 1%;
+    @include midddle {
+
+    }
   }
 }
 
 
 
 .list {
+
   ul {
     margin-left: 0;
     padding-left: 0;
     padding-right: 2em;
+    @include midddle {
+      padding-left: 2em;
+    }
   }
   li {
     padding: $margin_padding_small $margin_padding_normal;
@@ -137,6 +172,10 @@ ul {
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  @include midddle {
+
   }
 }
 

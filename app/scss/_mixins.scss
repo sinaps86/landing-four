@@ -5,25 +5,19 @@
 
 }
 
-
 @mixin round_button{
-
   @extend %button;
-
   color: $color_font_white;
-
   background-color: $color_primal_dark;
   padding: $margin_padding_small $margin_padding_big;
   border-radius: 5px;
   font-size: $size_font_normal;
+
 }
 
 @mixin square_button{
-
   @extend %button;
-
   color: $color_font_black;
-
   padding: $margin_padding_small $margin_padding_big;
   font-size: $size_font_big;
   letter-spacing: 1px;
